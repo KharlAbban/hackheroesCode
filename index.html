@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="hackHero">
+  <title>HackHeroes Main Page - Using APIs</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="vendor/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/fontawesome6/css/all.min.css">
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <div class="card border-0 shadow my-5" style="background: #cec5f3;">
+        <div class="card-body p-5">
+          <h1 class="fw-light">API Usage</h1>
+          <p class="lead">We use an API to generate an image object with properties such as details, name,id number, etc</p>
+          <p class="lead">We then use an involvement API to record user actions for the comments section.</p>
+
+            <!--Nested cards as placeholders for API images-->
+            <!--First Row-->
+            <div class="row p-0 m-0 mb-4">
+              <div class="col-3">
+                <div class="card bg-danger img-ph">
+                  <div class="card-body bg-success p-1">
+                    <img src="vendor/media/about.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+                <div class="controlBtns mx-auto mt-2">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                    About
+                  </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentsModal">
+                    Comments
+                  </button>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card bg-danger img-ph p-0 m-0">
+                  <div class="card-body bg-success p-1">
+                    <img src="vendor/media/about.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+                <div class="controlBtns mx-auto mt-2">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                    About
+                  </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentsModal">
+                    Comments
+                  </button>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card bg-danger img-ph">
+                  <div class="card-body bg-success">
+                  </div>
+                </div>
+                <div class="controlBtns mx-auto mt-2">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                    About
+                  </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentsModal">
+                    Comments
+                  </button>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card bg-danger img-ph">
+                  <div class="card-body bg-success">
+                  </div>
+                </div>
+                <div class="controlBtns mx-auto mt-2">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                    About
+                  </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentsModal">
+                    Comments
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!--Second Row-->
+            <div class="row p-0 m-0 mb-4">
+              <div class="col-3">
+                <div class="card bg-danger img-ph">
+                  <div class="card-body bg-success">
+                  </div>
+                </div>
+                <div class="controlBtns mx-auto mt-2">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                    About
+                  </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentsModal">
+                    Comments
+                  </button>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card bg-danger img-ph">
+                  <div class="card-body bg-success">
+                  </div>
+                </div>
+                <div class="controlBtns mx-auto mt-2">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                    About
+                  </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentsModal">
+                    Comments
+                  </button>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card bg-danger img-ph">
+                  <div class="card-body bg-success">
+                  </div>
+                </div>
+                <div class="controlBtns mx-auto mt-2">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                    About
+                  </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentsModal">
+                    Comments
+                  </button>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card bg-danger img-ph">
+                  <div class="card-body bg-success">
+                  </div>
+                </div>
+                <div class="controlBtns mx-auto mt-2">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                    About
+                  </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentsModal">
+                    Comments
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!--Third Row-->
+            <div class="row p-0 m-0 mb-4">
+              <div class="col-3">
+                <div class="card bg-danger img-ph">
+                  <div class="card-body bg-success">
+                  </div>
+                </div>
+                <div class="controlBtns mx-auto mt-2">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                    About
+                  </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentsModal">
+                    Comments
+                  </button>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card bg-danger img-ph">
+                  <div class="card-body bg-success">
+                  </div>
+                </div>
+                <div class="controlBtns mx-auto mt-2">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                    About
+                  </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentsModal">
+                    Comments
+                  </button>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card bg-danger img-ph">
+                  <div class="card-body bg-success">
+                  </div>
+                </div>
+                <div class="controlBtns mx-auto mt-2">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                    About
+                  </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentsModal">
+                    Comments
+                  </button>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card bg-danger img-ph">
+                  <div class="card-body bg-success">
+                  </div>
+                </div>
+                <div class="controlBtns mx-auto mt-2">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                    About
+                  </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentsModal">
+                    Comments
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!--Modals for popup-->
+            <!--Sample Buttons
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">
+              Launch About Modal
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentsModal">
+              Launch Comments Modal
+            </button>
+            -->
+            <!--About  modal-->
+            <div class="modal fade" id="aboutModal" data-bs-backdrop="static" data-bs-keyboard="false">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">About Modal Title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi saepe commodi, ut autem eveniet iusto ab ipsum, rerum eligendi sed aperiam fuga distinctio ullam itaque.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Save Changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Comments modal-->
+            <div class="modal fade" id="commentsModal" data-bs-backdrop="static" data-bs-keyboard="false">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">Comments Modal Title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi saepe commodi, ut autem eveniet iusto ab ipsum, rerum eligendi sed aperiam fuga distinctio ullam itaque.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Save Changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <p class="lead mt-5 pt-5">Scroll down...</p>
+          <p class="lead mb-0">You've reached the end!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="vendor/bootstrap-5.2.1-dist/js/jquery-3.6.0.min.js"></script>
+  <script src="vendor/popperjs/src/popper.js"></script>
+  <script src="vendor/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

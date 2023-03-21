@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("vendor/media/course-3.jpg") no-repeat;
+  background-size: cover;
+}
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#page_box {
+  background-color: aqua;
+  width: 50%;
+  height: 50vh;
+}
+.img-ph {
+  min-height: 250px;
+  height: 300px;
+  max-height: 350px;
+}
+.img-full {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
