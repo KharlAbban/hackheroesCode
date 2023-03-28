@@ -27,14 +27,19 @@ function retrieveSpecs (element) {
   var elementTarget = element.dataset.bsTarget;
   var elementParent = element.parentElement;
   var elementSiblingRow = elementParent.querySelector(".row");
+  var elementImg = elementParent.querySelector(".itemImg");
+  var ImgRef = elementImg.src;
   var getItemName = elementSiblingRow.querySelector(".itemName").textContent;
   var getItemLikes = elementSiblingRow.querySelector(".numLikes").textContent;
   console.log(elementTarget);
-  repModalTitle(elementTarget, element.textContent);
+  repModalTitle(elementTarget, getItemName, ImgRef);
 }
 
-//Function to replace modal title
-function repModalTitle(target, displayText) {
+//Function to replace modal title and image
+function repModalTitle(target, displayText, imgSrc) {
   var targetModal =document.querySelector(target);
-  targetModal.querySelector(".modal-title").textContent = displayText;
+  var title = targetModal.querySelector(".modal-title");
+  (target == "#aboutModal") ? (title.textContent = "About " + displayText) : (console.log("False"));
+  targetModal.querySelector(".modalImg").src = imgSrc;
+  //targetModal.querySelector(".modal-title").textContent = displayText;  === Redundant
 }
